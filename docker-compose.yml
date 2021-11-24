@@ -1,0 +1,13 @@
+services:
+  h2-database:
+    image: oscarfonts/h2
+    environment:
+      - "IFEXISTS:false"
+    ports:
+      - "81:81"
+      - "1521:1521"
+    expose:
+      - "81"
+      - "1521"
+    volumes:
+      - "/Users/byounghee.kim/dbtemp:/opt/h2-data"
