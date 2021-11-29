@@ -1,1 +1,0 @@
-FROM oscarfonts/h2
