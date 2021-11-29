@@ -2,7 +2,7 @@ services:
   h2-database:
     image: oscarfonts/h2
     environment:
-      - "IFEXISTS:false"
+      - "H2_OPTIONS=-ifNotExists"
     ports:
       - "81:81"
       - "1521:1521"
@@ -10,4 +10,4 @@ services:
       - "81"
       - "1521"
     volumes:
-      - "/Users/byounghee.kim/dbtemp:/opt/h2-data"
+      - "~/h2db:/opt/h2-data"
