@@ -3,7 +3,8 @@
     <persistence-unit name="library">
 
         <class>domain.Location</class>
-        <class>domain.Book</class>
+        <class>domain.BookInfo</class>
+        <class>domain.BooksInfo</class>
         <properties>
 
             <!--            접근정보-->

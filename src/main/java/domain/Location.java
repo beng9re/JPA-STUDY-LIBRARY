@@ -1,17 +1,15 @@
 package domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
 
 @Entity
-@Builder
 @NoArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Location {
 
 	@Builder
@@ -22,9 +20,12 @@ public class Location {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "LOCATION_ID")
 	private Long id;
 
 	@Column(name = "LOCATION_NAME")
 	private String name;
+
+
 
 }

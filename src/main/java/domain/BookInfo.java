@@ -1,12 +1,9 @@
 package domain;
 
 import java.math.BigDecimal;
+import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -14,12 +11,11 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Getter
-@Builder
 @NoArgsConstructor
-public class Book {
+public class BookInfo {
 
 	@Builder
-	public Book(Long id, String name, BigDecimal price) {
+	public BookInfo(Long id, String name, BigDecimal price) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
