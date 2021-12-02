@@ -28,5 +28,8 @@ public class Books{
 	@Column(name = "BOOK_STATUS")
 	private BookStatus bookStatus;
 
+	@ManyToOne
+	private User user;
+
 
 }

@@ -4,7 +4,8 @@
 
         <class>domain.Location</class>
         <class>domain.BookInfo</class>
-        <class>domain.BooksInfo</class>
+        <class>domain.Books</class>
+        <class>domain.User</class>
         <properties>
 
             <!--            접근정보-->
