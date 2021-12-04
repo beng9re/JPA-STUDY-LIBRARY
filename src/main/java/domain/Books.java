@@ -16,11 +16,11 @@ public class Books{
 	@Column(name="BOOKS_ID")
 	private Long id;
 
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "BOOK_ID")
 	private BookInfo book;
 
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "LOCATION_ID")
 	private Location location;
 

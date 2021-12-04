@@ -67,10 +67,6 @@ public class LibraryInitService {
 			em.persist(book);
 
 
-
-
-
-
 		});
 	}
 
@@ -88,7 +84,6 @@ public class LibraryInitService {
 		user2.setPhoneNum(new PhoneNumber("010","3245","5233"));
 
 		em.persist(user2);
-
 
 		return List.of(user1,user2);
 
